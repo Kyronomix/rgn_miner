@@ -16,7 +16,7 @@ Config.xp = {
 }
 
 Config.itemcount = {
-	['min'] = 1,
+    ['min'] = 1,
     ['max'] = 3
 }
 
