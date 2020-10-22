@@ -1,7 +1,6 @@
 Config = {}
 Config.lang = 'en'
 
-Config.JobName = 'miner'
 Config.Vehicle = 'CART06'
 Config.item = 'steel'
 
