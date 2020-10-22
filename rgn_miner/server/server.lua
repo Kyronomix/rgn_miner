@@ -6,12 +6,8 @@ RegisterServerEvent('rgn_miner:startjob')
 AddEventHandler('rgn_miner:startjob', function()
     --TriggerEvent('redemrp:getPlayerFromId', source, function(user)
     TriggerEvent("vorp:getCharacter",source,function(user)
-        if user.job == Config.JobName then
-            TriggerClientEvent('rgn_miner:start', source)
-            TriggerClientEvent("vorp:TipRight", source, Language.translate[Config.lang]['gopos'], 5000)
-        else
-            TriggerClientEvent("vorp:TipRight", source, Language.translate[Config.lang]['nojob'], 5000)
-        end
+        TriggerClientEvent('rgn_miner:start', source)
+        TriggerClientEvent("vorp:TipRight", source, Language.translate[Config.lang]['gopos'], 5000)
     end)
 end)
 
